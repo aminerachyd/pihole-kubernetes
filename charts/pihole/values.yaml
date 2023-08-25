@@ -320,6 +320,11 @@ dnsmasq:
   # - address=/foo.bar/192.168.178.10
   # - address=/bar.foo/192.168.178.11
 
+  # -- Adds custom dns entries in /etc/pihole/custom.list. The entries will be visible through the web UI
+  customlist:
+  # - 192.168.178.10 foo.bar
+  # - 192.168.178.11 bar.foo
+
   # -- Dnsmasq reads the /etc/hosts file to resolve ips. You can add additional entries if you like
   additionalHostsEntries: []
   # - 192.168.0.3     host4

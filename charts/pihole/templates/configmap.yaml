@@ -30,3 +30,7 @@ data:
   {{- range .Values.dnsmasq.customCnameEntries }}
     {{ . }}
   {{- end }}
+  06-custom.list: |
+  {{- range .Values.dnsmasq.customlist }}
+    {{ . }}
+  {{- end }}
